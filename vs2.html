@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Services - Your Electronics Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo">Velocity Services</a> <form action="/search" method="GET" class="search-box">
+                <input type="text" placeholder="Search products..." name="q">
+                <button type="submit">Search</button>
+            </form>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>Big Billion Days Sale!</h1>
+            <p>Up to 50% off on Electronics</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <span class="badge">New</span>
+                <img src="https://i.pinimg.com/736x/aa/ee/74/aaee744610590d71577c72c84b135d36.jpg" alt="Smart Watch">
+                <h3>Galaxy Watch 5</h3>
+                <p>Track your fitness and sleep.</p>
+                <div style="margin: 10px 0;">
+                    <small>Demo Preview:</small><br>
+                </div>
+                <span class="price">24,999</span><br> <button class="submit-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/5b/8c/ef/5b8ceffcce8e02aae47bf4ce8448fa33.jpg" alt="Headphones">
+                <h3>Sony XM4</h3>
+                <p>Noise cancelling headphones.</p>
+                <div style="margin: 10px 0;">
+                    <small>Audio Quality Test:</small><br>
+                </div>
+                <span class="price">29,990</span><br> <button class="submit-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <span class="badge" style="background: green;">Best Seller</span>
+                <img src="https://i.pinimg.com/1200x/36/9b/c3/369bc3be09b8f8bf7039225b3029fc69.jpg" alt="Laptop">
+                <h3>MacBook Air</h3>
+                <p>M2 Chip, 256GB SSD, 8GB RAM.</p>
+                <span class="price">99,900</span><br> <button class="submit-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://i.pinimg.com/736x/12/d1/f5/12d1f54372a9bc6829c7fb2cada3de47.jpg" alt="Camera">
+                <h3>Canon EOS R50</h3>
+                <p>Mirrorless Camera with Lens.</p>
+                <span class="price">59,999</span><br> <button class="submit-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Detailed Comparison</h2>
+        <table>
+            <caption>Top Selling Laptops Specs</caption>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>MacBook Air</th>
+                    <th>Dell XPS 13</th>
+                    <th>HP Spectre</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Processor</td>
+                    <td>Apple M2</td>
+                    <td>Intel i7</td>
+                    <td>Intel i7</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>8GB Unified</td>
+                    <td>16GB DDR5</td>
+                    <td>16GB DDR4</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>256GB SSD</td>
+                    <td>512GB SSD</td>
+                    <td>1TB SSD</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><strong>Price</strong></td>
+                    <td>₹99,900</td> <td>₹1,09,990</td> <td>₹1,24,990</td> </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="container" id="contact">
+        <div class="contact-section">
+            <h2>Contact Support</h2>
+            <form action="/submit-support" method="POST">
+                <fieldset>
+                    <legend>Customer Inquiry</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dept">Department:</label>
+                        <select id="dept" name="department">
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="returns">Returns & Refunds</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Velocity Services Inc. All rights reserved.</p> </footer>
+
+</body>
+</html>

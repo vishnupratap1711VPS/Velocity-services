@@ -1,0 +1,236 @@
+
+        body {
+            background-color: lightgray;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+        header {
+           
+            position: sticky; 
+            top: 0;
+           
+            z-index: 1000; 
+            background-color: rgb(67, 151, 247);
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none; 
+        }
+
+        header ul {
+            list-style-type: none; 
+            display: flex;
+            gap: 20px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+        }
+
+     
+        header a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .search-box {
+            display: flex;
+        }
+        
+        .search-box input {
+            padding: 8px;
+            border: none;
+            border-radius: 2px 0 0 2px;
+        }
+
+        .search-box button {
+            padding: 8px 15px;
+            background-color: var(--secondary-color);
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        
+        .hero {
+            
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            position: relative; 
+            transition: transform 0.3s;
+        }
+
+
+        :root {
+            --primary-color: #2874f0; 
+            --secondary-color: #fb641b;
+            --dark-bg: #232f3e; 
+            --light-gray: #f1f3f6;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            display: block; 
+            margin-bottom: 10px;
+        }
+
+        .price::before {
+            content: "₹";
+            margin-right: 2px;
+        }
+
+        .price {
+            color: #B12704;
+            font-size: 1.2em;
+            font-weight: bold;
+
+            display: inline-block; 
+            margin: 10px 0;
+        }
+
+        .badge {
+
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #cc0c39;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        thead {
+            background-color: var(--dark-bg);
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .contact-section {
+            background: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
